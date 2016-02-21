@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Item from './item.js';
 
-export default class App extends Component {
+export default class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -17,7 +17,7 @@ export default class App extends Component {
           <Item key={item} item={item} />
         )
       }
-    )
+    );
     return (
       <ul>
         {items}
