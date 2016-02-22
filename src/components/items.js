@@ -15,8 +15,8 @@ export default class Items extends React.Component {
       items: [
       ]
     };
-    this.firebaseRef = new Firebase('https://alovelything.firebaseio.com/brands');
-    this.firebaseRef.once("value", (dataSnapshot)=> {
+    this.firebaseRef = new Firebase('https://ntinue.firebaseio.com/ideas');
+    this.firebaseRef.on("value", (dataSnapshot)=> {
       var items = dataSnapshot.val();
       this.setState({
         items: items
@@ -25,10 +25,8 @@ export default class Items extends React.Component {
   };
   render() {
     var items = _.map(this.state.items, function (item, index) {
-          var avatar = "http://data.a-lovely-thing.com/assets/brands/" + item.imageThumb;
-          console.log(avatar);
           return (
-              <Item key={item.name} name={item.name} avatar={avatar}/>
+              <Item key={item.keywords} name={item.keywords} />
           )
         }
     );
