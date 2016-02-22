@@ -41,10 +41,13 @@
   },
   "dependencies": {
     "css-loader": "^0.23.1",
+    "firebase": "^2.4.1",
+    "lodash": "^4.5.1",
     "material-ui": "^0.14.4",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",
     "style-loader": "^0.13.0",
-    "stylus-loader": "^1.5.1"
+    "stylus-loader": "^1.5.1",
+    "trim": "0.0.1"
   }
 }
