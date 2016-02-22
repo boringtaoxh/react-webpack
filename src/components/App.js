@@ -1,5 +1,6 @@
 import React from 'react';
 import Items from './items.js';
+import Categories from './categories.js';
 
 import AppBar from 'material-ui/lib/app-bar';
 import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
@@ -14,7 +15,7 @@ const muiTheme = getMuiTheme({
   }
 });
 
-class Main extends React.Component {
+class App extends React.Component {
   constructor() {
     super();
   }
@@ -24,6 +25,7 @@ class Main extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div>
           <AppBar title="Header"/>
+          <Categories />
           <Items />
         </div>
       </MuiThemeProvider>
@@ -31,4 +33,4 @@ class Main extends React.Component {
   }
 }
 
-export default Main;
+export default App;

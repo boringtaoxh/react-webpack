@@ -5,7 +5,7 @@ import mui from 'material-ui';
 
 var {Card, List} = mui;
 
-export default class App extends React.Component {
+export default class Items extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
