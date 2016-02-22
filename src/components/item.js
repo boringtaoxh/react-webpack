@@ -1,4 +1,7 @@
 import React from 'react';
+import mui from 'material-ui';
+
+var {ListItem, Avatar} = mui;
 
 export default class Item extends React.Component {
   constructor(props) {
@@ -6,7 +9,7 @@ export default class Item extends React.Component {
   };
   render() {
     return (
-        <li>{this.props.item}</li>
+      <ListItem leftAvatar={<Avatar>A</Avatar>}>{this.props.item}</ListItem>
     );
   };
 }

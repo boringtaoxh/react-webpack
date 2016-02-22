@@ -1,6 +1,10 @@
 import React from 'react';
 import Item from './item.js';
 
+import mui from 'material-ui';
+
+var {Card, List} = mui;
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -19,9 +23,11 @@ export default class App extends React.Component {
       }
     );
     return (
-      <ul>
-        {items}
-      </ul>
+      <Card>
+        <List>
+          {items}
+        </List>
+      </Card>
     );
   };
 }
