@@ -1,6 +1,7 @@
 import React from 'react';
 import Items from './items.js';
 import Categories from './categories.js';
+import Form from './form.js';
 
 import AppBar from 'material-ui/lib/app-bar';
 import getMuiTheme from 'material-ui/lib/styles/getMuiTheme';
@@ -27,6 +28,7 @@ class App extends React.Component {
           <AppBar title="Header"/>
           <Categories />
           <Items />
+          <Form />
         </div>
       </MuiThemeProvider>
     );
