@@ -9,7 +9,7 @@ export default class Item extends React.Component {
   };
   render() {
     return (
-      <ListItem leftAvatar={<Avatar>A</Avatar>}>{this.props.item}</ListItem>
+      <ListItem leftAvatar={<Avatar src={this.props.avatar}></Avatar>}>{this.props.name}</ListItem>
     );
   };
 }
